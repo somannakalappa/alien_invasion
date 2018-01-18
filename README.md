@@ -1,6 +1,6 @@
 # 序言
 
-此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源[当当网](http://product.dangdang.com/24003310.html)
+此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
 
 在此项目中，将使用Pygame包来开发一款2D游戏。完成这个项目后，将获得自己动手使用Pygame开发2D游戏的技能
 
