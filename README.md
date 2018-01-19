@@ -8,7 +8,7 @@
   - [设置背景色](#设置背景色)
   - [创建设置类](#创建设置类)
 - [添加飞船图像](#添加飞船图像)
-  - [创建Ship类](#创建Ship类)
+  - [创建Ship类](#创建ship类)
 - [重构：模块game_functions](#重构：模块gamefunctions)
   - [函数check_events()](#函数checkevents)
   - [函数update_screen()](#函数updatescreen)
