@@ -48,4 +48,25 @@ $ python
 
 如果使用Python3，就需要执行两个步骤：
 1. 安装Pygame依赖的库
+执行下面的命令来安装Pygame依赖的库（如果开始终端会话使用的是使用命令python3.x，将下面的python3替换成3.x即可）
+```bash
+sudo apt-get install python3-dev mercurial
+sudo apt-get install libsdl-image1.2-dev libsdl2-dev libsdl-ttf2.0-dev
+```
+如果要启用一些高高级功能，如添加声音的功能，可安装下面这些额外的库
+```bash
+sudo apt-get install libsdl-mixer1.2-dev libportmidi-dev
+sudo apt-get install libswscale-dev libsmpeg-dev libavformat-dev libavcodec-dev
+sudo apt-get install python-numpy
+```
 2. 下载并安装Pygame
+执行下面命令安装Pygame（如有必要，可将pip替换为pip3）
+```bash
+pip install --user hg+http://bitbucket.org/pygame/pygame
+```
+要确认安装成功，启动一个Python终端会话，并尝试执行以下命令来导入Pygame：
+```bash
+$ python3
+>>> import pygame
+>>>
+```
