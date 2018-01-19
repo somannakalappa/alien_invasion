@@ -1,5 +1,7 @@
 - [序言](#序言)
 - [安装Pygame](#安装Pygame)
+  - [使用pip安装Python包](#使用pip安装Python包)
+  - [在Linux中安装Pygame](#在Linux中安装Pygame)
 - [创建Pygame窗口以及响应用户输入](#创建Pygame窗口以及响应用户输入)
 
 # 序言
