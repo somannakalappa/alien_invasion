@@ -83,6 +83,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ```
 确认正确安装Homebrew，请执行如下命令：
 ```bash
-brew doctor
+$ brew doctor
 Your system is ready to brew.
 ```
+以上步骤完成过后，就可以开始开发游戏项目了
