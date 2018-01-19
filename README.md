@@ -8,6 +8,7 @@
   - [设置背景色](#设置背景色)
   - [创建设置类](#创建设置类)
 - [添加飞船图像](#添加飞船图像)
+  - [创建Ship类](#创建Ship类)
 # 序言
 此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
 
@@ -144,3 +145,32 @@ Pygame默认创建一个黑色背景，将背景设置为另一种颜色
 
 # 添加飞船图像
 下面将飞船加入到游戏中。为了在屏幕上绘制玩家的飞船，我们将加载一幅图像，再使用Pygame方法`blit()`绘制它
+
+此项目中的所有图像保存在`images`文件夹中
+## 创建Ship类
+选择用于表示飞船的图像后，需要将其显示到屏幕上。创建一个名为`ship`的模块，其中包含Ship类，它负责飞船的大部分行为。[ship.py](https://github.com/kjbryantdrew/alien_invasion/blob/master/ship.py)
+
+首先，导入pygame。Ship的方法`__init__()`接受两个参数：引用self和screen，其中后者指定了要将飞船绘制到什么地方
+
+`pygame.image.load('images/ship.bmp')`：加载图像。这个函数返回一个表示飞船的surface，二我们将这个surface存储到self.image中
+
+加载图像后，我们使用`get_rect()`获取相应surface的属性rect。Pygame的效率之所以如此高，一个原因是它让我们能够处理矩形（rect图像）一样处理游戏元素，即便taeny的形状并非矩形。像矩形一样处理游戏元素之所以高效，是因为矩形是简单的几何形状。这种做法较好，玩家几乎不会注意到我们处理的不是游戏元素的实际形状
+
+处理rect对象时，可使用矩形四角和中心的x和y坐标。可以通过设置这些值来指定矩形的位置
+> 要将游戏元素居中，可设置相应rect对象的属性center、centerx、centery。要让游戏元素与边缘对齐，可使用属性top、bottom、或right；要调整游戏元素的水平或垂直位置，可使用属性x和y，他们分别是相应矩形左上角的x和y坐标。这些属性让你无需去做游戏开发人员原本需要手工完成的计算，经常会用到这些属性
+
+根据实际，需要把飞船放在底部中央。为此，首先将表示屏幕的矩形存储在self.screen_rect中，再将self.rect.centerx(飞船中心的x坐标)设置为表示屏幕的矩形的属性centerx，并将self.rect.bottom（飞船下边缘的y坐标）设置为表示屏幕的矩形的属性bottom。Pygame将使用这些rect属性来放置飞船图像，使其与屏幕下边缘对其并水平居中
+
+`blitme()`方法：根据self.rect指定的位置将图像绘制在屏幕上
+
+更新`alien_invasipn.py`：使其创建一艘飞船，并调用方法`blitme()`
+
+```python
+# 创建一艘飞船
+ship = Ship(screen)
+--snip--
+# 每次循环都重绘屏幕
+screen.fill(ai_settings.bg_color)
+ship.blitme()
+--snip--
+```
