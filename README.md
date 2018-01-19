@@ -99,4 +99,5 @@ Your system is ready to brew.
 # 开始游戏项目
 ## 创建Pygame窗口以及响应用户输入
 **`alien_invasion.py`**
-[alien_invasion.py]:(https://github.com/kjbryantdrew/alien_invasion/blob/master/alien_invasion.py)
+
+[alien_invasion.py](https://github.com/kjbryantdrew/alien_invasion/blob/master/alien_invasion.py)
