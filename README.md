@@ -32,3 +32,20 @@ sudo python get-pip.py
 ```bash
 python get-pip.py
 ```
+
+## 在Linux中安装Pygame
+如果使用的是Python2.7，使用包管理器来安装Pygame。
+```bash
+sudo apt-get install python-pygame
+```
+执行如下命令，在终端会话中检查安装情况：
+```bash
+$ python
+>>> import pygame
+>>> 
+```
+如果没有任何输出，说明Python成功导入了Pygame，就可以开始游戏项目的开发了
+
+如果使用Python3，就需要执行两个步骤：
+1. 安装Pygame依赖的库
+2. 下载并安装Pygame
