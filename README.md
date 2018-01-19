@@ -70,3 +70,19 @@ $ python3
 >>> import pygame
 >>>
 ```
+
+## 在OS X中安装Pygame
+要安装Pygame依赖的有些包，需要Homebrew。如果没有安装Homebrew，执行如下命令：
+```bash
+xcode-select --install
+```
+在不断出现的对话框中都单击OK按钮
+然后：
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+确认正确安装Homebrew，请执行如下命令：
+```bash
+brew doctor
+Your system is ready to brew.
+```
