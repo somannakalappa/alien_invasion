@@ -64,7 +64,7 @@ sudo apt-get install python-numpy
 ```bash
 pip install --user hg+http://bitbucket.org/pygame/pygame
 ```
-在时间中，本人更推荐使用以下命令安装：
+在实践中，本人更推荐使用以下命令安装：
 ```bash
 hg clone https://bitbucket.org/pygame/pygame 
 cd pygame 
