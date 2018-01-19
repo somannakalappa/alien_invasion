@@ -94,3 +94,8 @@ $ brew doctor
 Your system is ready to brew.
 ```
 以上步骤完成过后，就可以开始开发游戏项目了
+
+后文中所有的源代码已经上传至本github项目页中
+# 开始游戏项目
+## 创建Pygame窗口以及响应用户输入
+`alien_invasion.py`
