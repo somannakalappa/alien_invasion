@@ -2,6 +2,7 @@
 - [安装Pygame](#安装pygame)
   - [使用pip安装Python包](#使用pip安装python包)
   - [在Linux中安装Pygame](#在linux中安装pygame)
+  - [在OS X中安装Pygame](#在os-x中安装pygame)
 - [创建Pygame窗口以及响应用户输入](#创建pygame窗口以及响应用户输入)
 
 # 序言
