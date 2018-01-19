@@ -103,7 +103,9 @@ Your system is ready to brew.
 [alien_invasion.py](https://github.com/kjbryantdrew/alien_invasion/blob/master/alien_invasion.py)
 
 首先，导入`sys`和`pygame`。模块pygame包含开发游戏所需的功能。玩家退出时，我们使用sys来退出游戏
+
 `pygame.init()`：初始化背景设置，让Pygame能够正确地工作
+
 `pygame.display.set_mode((1000, 600))`：创建一个名为`screen`的显示窗口，实参`(1000, 600)`是一个元组，制定了游戏窗口的尺寸，可以根据自己的显示器修改
 > 对象`screen`是一个surface。在Pygame中，surface是屏幕的一部分，用于显示游戏元素。在这个游戏中，每个元素（如外星人或飞船）都是个surface。`display.set_mode()`返回的surface表示整个游戏窗口。激活游戏的动画循环后，每经过一次循环都将自动绘制这个surface
 
