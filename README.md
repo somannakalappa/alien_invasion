@@ -64,6 +64,13 @@ sudo apt-get install python-numpy
 ```bash
 pip install --user hg+http://bitbucket.org/pygame/pygame
 ```
+在时间中，本人更推荐使用以下命令安装：
+```bash
+hg clone https://bitbucket.org/pygame/pygame 
+cd pygame 
+python3 setup.py build  
+sudo python3 setup.py install
+```
 要确认安装成功，启动一个Python终端会话，并尝试执行以下命令来导入Pygame：
 ```bash
 $ python3
