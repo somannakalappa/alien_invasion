@@ -9,6 +9,7 @@
   - [创建设置类](#创建设置类)
 - [添加飞船图像](#添加飞船图像)
   - [创建Ship类](#创建Ship类)
+- [重构：模块game_functions](#重构：模块game_functions)
 # 序言
 此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
 
@@ -174,3 +175,19 @@ screen.fill(ai_settings.bg_color)
 ship.blitme()
 --snip--
 ```
+
+# 重构：模块game_functions
+在大型项目中，经常需要在添加新代码前重构既有代码。重构旨在简化既有代码的结构，使其更容易扩展。
+
+创建一个名为`game_functions`的新模块，它将存储大量让游戏运行的函数。通过创建模块`game_functions`，可避免`alien_invasion.py`文件过长，并使逻辑更容易理解
+## 函数`check_events()`
+我们首先把管理事件的代码移到一个名为`check_events()`的函数中，以简化`run_game()`并隔离事件管理循环。通过隔离事件循环，可将事件管理与游戏其他方面（如更新屏幕等）分离。
+
+将`check_events()`放在一个名为`game_functions`的新模块中
+
+更新`alien_invasipn.py`：导入模块`game_functions`，并将事件循环替换为对函数`check_events()`的调用
+
+## 函数`update_screen()`
+为进一步简化`run_game()`，将更新屏幕的代码移到一个名为`update_screen()`的函数中，并将这个函数放在模块`game_functions`中
+
+更新`alien_invasipn.py`：将`alien_invasipn.py`的while循环中更新屏幕的代码替换为对函数`update_screen()`的调用
