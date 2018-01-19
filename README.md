@@ -6,6 +6,8 @@
 - [开始游戏项目](#开始游戏项目)
   - [创建Pygame窗口以及响应用户输入](#创建pygame窗口以及响应用户输入)
   - [设置背景色](#设置背景色)
+  - [创建设置类](#创建设置类)
+- [添加飞船图像](#添加飞船图像)
 # 序言
 此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
 
@@ -132,3 +134,12 @@ Pygame默认创建一个黑色背景，将背景设置为另一种颜色
 在Pygame中，颜色是以RGB值指定的
 
 `screen.fill(bg_color)`：用背景色填充屏幕。这个方法只接受一个实参——一种颜色
+
+## 创建设置类
+每次给游戏添加新功能时，通常也将引入一些新设置。编写一个[settings.py](https://github.com/kjbryantdrew/alien_invasion/blob/master/settings.py)的模块，其中包含一个名为Settings的类，用于将所有设置存储到一个地方，以免在代码中到处添加设置
+
+这使得函数调用更简单，且在项目增大时修改游戏的外观更容易：只需修改`settings.py`中的一些内容即可
+
+为创建Settings实例并使用它来访问设置，修改alien_invasion.py进行修改
+
+# 添加飞船图像
