@@ -66,7 +66,7 @@ pip install --user hg+http://bitbucket.org/pygame/pygame
 ```
 在实践中，本人更推荐使用以下命令安装：
 ```bash
-hg clone https://bitbucket.org/pygame/pygame 
+hg clone https://bitbucket.org/pygame/pygame  # 也可以直接从此githu项目中下载pygame文件，然后执行后面的命令
 cd pygame 
 python3 setup.py build  
 sudo python3 setup.py install
