@@ -1,8 +1,8 @@
 - [序言](#序言)
-- [安装Pygame](#安装Pygame)
-  - [使用pip安装Python包](##使用pip安装Python包)
-  - [在Linux中安装Pygame](##在Linux中安装Pygame)
-- [创建Pygame窗口以及响应用户输入](#创建Pygame窗口以及响应用户输入)
+- [安装Pygame](#安装pygame)
+  - [使用pip安装Python包](#使用pip安装python包)
+  - [在Linux中安装Pygame](#在linux中安装pygame)
+- [创建Pygame窗口以及响应用户输入](#创建pygame窗口以及响应用户输入)
 
 # 序言
 此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
