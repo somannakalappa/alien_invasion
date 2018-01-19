@@ -10,6 +10,9 @@
 - [添加飞船图像](#添加飞船图像)
   - [创建Ship类](#创建Ship类)
 - [重构：模块game_functions](#重构：模块game_functions)
+  - [函数`check_events()`](#函数`check_events()`)
+  - [函数`update_screen()`](#函数`update_screen()`)
+
 # 序言
 此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
 
