@@ -3,8 +3,9 @@
   - [使用pip安装Python包](#使用pip安装python包)
   - [在Linux中安装Pygame](#在linux中安装pygame)
   - [在OS X中安装Pygame](#在os-x中安装pygame)
-- [创建Pygame窗口以及响应用户输入](#创建pygame窗口以及响应用户输入)
-
+- [开始游戏项目](#开始游戏项目)
+  - [创建Pygame窗口以及响应用户输入](#创建pygame窗口以及响应用户输入)
+  - [设置背景色](#设置背景色)
 # 序言
 此項目“外星人入侵”，來自《Python编程——从入门到实践》(Eric Matthes 著，袁国忠 译)。我的购买源: [当当网](http://product.dangdang.com/24003310.html)
 
@@ -103,7 +104,7 @@ Your system is ready to brew.
 
 后文中所有的源代码已经上传至本github项目页中
 # 开始游戏项目
-# 创建Pygame窗口以及响应用户输入
+## 创建Pygame窗口以及响应用户输入
 **`alien_invasion.py`**
 
 [alien_invasion.py](https://github.com/kjbryantdrew/alien_invasion/blob/master/alien_invasion.py)
@@ -120,3 +121,14 @@ Your system is ready to brew.
 为访问Pygame检测到的事件，我们使用方法`pygame.event.get()`。所有键盘和鼠标事件都将促使for循环运行。在这个循环中，我们将编写一系列的if语句来检测并响应特定的事件。例如，玩家单击游戏窗口的关闭按钮时，将检测到`pygame.QUIT`事件，我们就调用`sys.exit()`来退出游戏
 
 `pygame.display.flip()`：命令Python让最近绘制的屏幕可见。在这里，他在每次执行while循环时都绘制一个空屏幕，并擦去旧屏幕，使得只有新屏幕可见。在我们移动游戏元素时，`pygame.display.flip()`将不断更新屏幕，以显示元素的新位置，并在原来的位置隐藏元素。从而营造平滑移动的效果
+
+## 设置背景色
+同样在[alien_invasion.py](https://github.com/kjbryantdrew/alien_invasion/blob/master/alien_invasion.py)中。
+
+Pygame默认创建一个黑色背景，将背景设置为另一种颜色
+
+首先，我们创建一种背景色，并将其存储在`bg_color`中，改颜色只需指定一次，因此在进入while主循环前定义它
+
+在Pygame中，颜色是以RGB值指定的
+
+`screen.fill(bg_color)`：用背景色填充屏幕。这个方法只接受一个实参——一种颜色
