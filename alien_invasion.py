@@ -3,6 +3,7 @@ import sys
 import pygame
 
 from settings import Settings
+
 def run_game():
     # 初始化pygame、设置和屏幕对象
     pygame.init()
